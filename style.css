@@ -1,0 +1,116 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+.container h1{
+    margin-bottom: 30px;
+
+}
+.balance{
+    width: 30%;
+}
+.container .balance {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+}
+.container .balance #fbalance{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.container .balance .moder{
+    background-color: #fdfdfd;
+    display: flex;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px 0px 15px 0px;
+}
+.container .balance .moder .expense{
+    border-left: 1px solid #f2f1f1;
+}
+.container .balance .moder div{
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+}
+.container .balance .moder div #green{
+    color: #0aef0a;
+}
+
+.container .balance .moder div #red{
+    color: red;
+}
+.container .history{
+    width: 30%;
+}
+.container .history ul{
+    list-style-type: none;
+}
+.container .history ul li{
+    padding:5px;
+    width: 30%;
+    margin: 30px 0px 30px 0px;
+    background-color: #fdfdfd;
+    font-size: 15px;
+    font-weight: 900 ;
+    position: absolute;
+}
+.container .history ul li #increas{
+    border-right: 1px solid #0aef0a;
+}
+.container .history ul li:hover span{
+    display: block;
+}
+
+.container .history ul span{
+    background-color: red;
+    padding: 5px;
+    color: #fff ;
+    position: relative;
+    left: -25px;
+    bottom: -35px;
+    display: none;
+}
+
+.container .info{
+    margin-top: 80px;
+    width: 30%;
+}
+.container .info p{
+    font-weight: 900;
+}
+
+.container input{
+    background-color:#fdfdfd;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 900;
+    border: 1px solid #ccc;
+}
+.container .info .submit{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #2727fe;
+    color: #fff;
+    border: none;
+}
+
+
