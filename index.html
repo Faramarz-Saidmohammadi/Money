@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
+    <title>MovieBookTicket</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="movie-icon.png" type="image/x-icon">
 </head>
+
 <body>
+
+
+    <div class="movie-show">
+        <label>Pick A Movie</label>
+        <select id="movie">
+            <option value="20" selected>Averngers EndGame (20$)</option>
+            <option value="15">Harry Potter (15$)</option>
+            <option value="13">Liten Macuein (13$)</option>
+            <option value="10">Dead pool (10$)</option>
+        </select>
+    </div>
+
+
+    <ul class="movie-info">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+
     <div class="container">
-    <h1>Expense Tracker</h1>
-    <div class="balance" id="balance">
-        <p>YOUR BALANCE</p>
-        <span id="fbalance">$0.00</span>
-        <div class="moder">
-        <div class="income" id="income">
-            <p>INCOME</p>
-            <span id="green">$0.00</span>
+        <div class="screen"></div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
         </div>
-        <div class="expense" id="expense">
-            <p>EXPENCE</p>
-            <span id="red">$0.00</span>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
         </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
         </div>
     </div>
-    <div class="history" id="history">
-        <h3>HISTORY</h3>
-        <br>
-        <hr>
-        <br>
-        <ul id="area">
-            <li id="increas">sample</li>
-            <span>x</span>
-            <!-- <li id="decreas">desample</li>
-            <span>x</span> -->
-        </ul>
-    </div>
-    <div class="info" id="info">
-        <h3>Add new transaction</h3>
-        <br>
-        <hr>
-        <br>
-        <p>Text</p>
-        <input type="text" class="text" id="text" placeholder="Enter text...">
-        <p>Amount</p>
-        <p>(negative-expense,positive,income)</p>
-        <input type="text" class="amount" id="amount" placeholder="Enter amount..." >
-        <button class="submit" id="submit" type="submit" >Add transaction</button>
-    </div>
+    <p class="text">You have select <span id="count">0</span> Seat for Price of $<span id="total">0<span></p>
+
+    <div class="btn">
+        <button id="submit"><a href="index.html">Submit</a></button>
+        <button id="clear"><a href="index.html">Clear</a></button>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
